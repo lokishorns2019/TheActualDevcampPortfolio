@@ -17,6 +17,11 @@ module ApplicationHelper
     end
     
     def copyright_generator
-        @copyright = IsaacJohnsenViewTool::Renderer.copyright "Isaac Johnsen", "All rights reserved"
+         @copyright = ThorDevcampViewTool::Renderer.copyright 'Thor Madsen',  ' | All rights reserved'
+    end
+  
+    def set_copyright
+   
     end
 end
+
