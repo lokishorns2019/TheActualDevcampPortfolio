@@ -157,62 +157,55 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 5rem;
+    width: 65rem;
   }
 }
 
 /*
- * Custom styles
+ * Custom Styles
  */
- 
- .card-block {
-   color: black;
-   text-align: left;
- }
- 
- .auth-links a {
-   color: black;
- }
- 
- .register-text {
-   text-align: right;
- }
- 
- .login > .card {
-   width: 22rem;
-   margin: 0 auto;
-   float: none;
- }
- 
- .app-nav span {
-   margin-left: 11px;
-   margin-right: 11px;
- }
- 
- #background {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   z-index: -100;
-   -webkit-transform: translateX(-50%) translateY(-50%);
-   transform: translateX(-50%) translateY(-50%);
-   background: image-url('surferpic.png') no-repeat;
-   background-size: cover;
- }
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('surferpic.png') no-repeat;
+  background-size: cover;
+}
 
 .app-footer {
   color: white;
-}
-
-.video {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
 }
 
 .tech-news {
@@ -220,10 +213,10 @@ body {
   margin: 20px;
 }
 
-.tech-news a {
-  color: #17A58F;
-}
-
 .tech-news > .card {
   padding: 30px;
+}
+
+.tech-news a {
+  color: #17A58F;
 }
