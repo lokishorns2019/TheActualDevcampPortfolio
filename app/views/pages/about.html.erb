@@ -1,14 +1,17 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+    <div class="card">
+        <h1>About Me</h1>
 
-<hr>
-
-<div class="row">
-    <div class="col-md-4">
-        <%= image_tag "Profile.jpg", width: 500, alt: "profile image" %>
-    </div>
-    
-    <div class="col-md-8">
-        <p>Description of me.</p>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <%= image_tag "Profile.jpg", width: 450, alt: "profile image", class: 'profile-img' %>
+            </div>
+            
+            <div class="col-md-6">
+                <p>Description of me.</p>
+            </div>
+        </div>
     </div>
 </div>
-
