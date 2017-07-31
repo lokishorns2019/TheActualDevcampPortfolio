@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-      @copyright = ThorDevcampViewTool::Renderer.copyright 'Thor Madsen',  ' | All rights reserved'
+    @copyright = ThorDevcampViewTool::Renderer.copyright 'Thor Madsen',  ' | All rights reserved'
   end
 
   def nav_items
