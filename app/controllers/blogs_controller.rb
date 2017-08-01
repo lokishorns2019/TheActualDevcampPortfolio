@@ -25,7 +25,7 @@ class BlogsController < ApplicationController
       @page_title = @blog.title
       @seo_keywords = @blog.body
     else
-      redirect_to blogs_path, alert: "You are not authorized to access this page"
+      redirect_to blogs_path, alert: "That was not the post you were looking fo"
     end
   end
 

@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-   <title><%= @page_title %></title>
-   <%= csrf_meta_tags %>
-   
-   <link href="https://fonts.googleapis.com/css?family=Audiowide|Play" rel="stylesheet">
-   
-   <meta name="keywords" content="<%= @seo_keywords %>" />
-   
-   <%= favicon_link_tag 'favicon.ico' %>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
- </head>
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
 
- <body>
-   
-   <div class="site-wrapper">
-     <div class="site-wrapper-inner">
-       <div class="cover-container">
-         
-         <!-- <div id="background"></div> -->
-         
-         <%= video_tag(
-             'surfer.mp4',
-             id: 'background',
-             autoplay: true,
-             loop: true,
-             muted: true,
-             poster: 'surferpic.png'
-           )
-           %>
-           
-        
-   
-         <%= render "shared/application_nav" %>
-   
-         <%= yield %>
-         
-         <%= render "shared/application_footer" %>
-         
-         <%= alerts %>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Play" rel="stylesheet">
 
-         
-       </div>
-     </div>
-   </div>
-   
- </body>
- 
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicon.ico' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <%= video_tag(
+              'surfer.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'surferpic.png'
+            )
+            %>
+
+          <%= render "shared/application_nav" %>
+
+          <%= yield %>
+
+          <%= render "shared/application_footer" %>
+
+          <%= alerts %>
+
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,11 +6,11 @@
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Play" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Audiowide|Play" rel="stylesheet">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
-    
+
     <%= favicon_link_tag 'favicon.ico' %>
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,9 +20,7 @@
   <body>
 
     <%= render 'shared/blog_nav' %>
-    
     <%= render 'shared/blog_masthead' %>
-
 
     <div class="container">
 
@@ -34,9 +32,8 @@
       </div>
 
       <%= render 'shared/blog_footer' %>
-      
-      <% alerts %>
 
+      <%= alerts %>
     </div>
   </body>
-</html>
+</html
