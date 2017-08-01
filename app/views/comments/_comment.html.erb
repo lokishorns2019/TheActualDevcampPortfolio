@@ -5,14 +5,14 @@
         <div class="col-md-2">
           <%= gravatar_helper comment.user %>
         </div>
-        
+
         <div class="col-md-10">
-          <div class="comment-attribution">
-            <span class="comment-name"><%= comment.user.name %></span> &nbsp; <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago
-          </div>
-          
           <div>
             <%= comment.content %>
+          </div>
+
+          <div class="comment-attribution">
+            Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago
           </div>
         </div>
       </div>
