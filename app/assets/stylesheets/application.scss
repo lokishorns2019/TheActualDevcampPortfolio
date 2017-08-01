@@ -215,8 +215,14 @@ h6, .h6 {
   background-size: cover;
 }
 
-.app-footer {
+.blog-footer {
+  margin-top: 20px;
+  padding-bottom: 0px;
+  padding: 2.5rem 0;
   color: white;
+  text-align: center;
+  background-color: transparent;
+  border-top: .05rem solid #e5e5e5;
 }
 
 .tech-news {
