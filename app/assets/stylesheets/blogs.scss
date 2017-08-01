@@ -208,3 +208,19 @@ h6, .h6 {
 .container > .name-tag {
   font-family: 'Audiowide', cursive;
 }
+
+.github a {
+  color: #212121;
+}
+
+a.githubhover:hover {
+  color: #000000;
+}
+
+.twitter a {
+  color: #00aced;
+}
+
+a.twitterhover:hover {
+  color: #0084b4;
+}
