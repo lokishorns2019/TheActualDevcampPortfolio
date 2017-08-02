@@ -48,12 +48,14 @@
       <% end %>
 
       <div>
-        <%= link_to_add_association 'Add Technology', f, :technologies %>
+        <%= link_to_add_association 'Add Technology', f, :technologies, class: 'btn btn-outline-primary' %>
       </div>
     </div>
+    
+    <hr>
 
     <div class="form-group">
-      <%= f.submit 'Save Portfolio Item', class: 'btn btn-outline-success btn-block' %>
+      <%= f.submit 'Save Portfolio Item', class: 'btn btn-outline-danger btn-block' %>
     </div>
   </div>
 <% end %>
