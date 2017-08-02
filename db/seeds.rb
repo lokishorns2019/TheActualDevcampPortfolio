@@ -39,10 +39,11 @@ end
 puts "3 Topics created"
 
 1.times do |blog|
-    Blog.create!(
-        title: "My Blog Post #{blog}",
-        body: "Hello there."
-    )
+  Blog.create!(
+    title: "My Blog Post #{blog}",
+    body: "Hello there.",
+    topic_id: Topic.last.id
+  )
 end
 
 puts "1 blog posts created"
