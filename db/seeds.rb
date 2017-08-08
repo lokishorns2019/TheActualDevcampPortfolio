@@ -1,7 +1,7 @@
 User.create!(
-    email: "lokishorns2019@gmail.com",
-    password: "BobaFett2019",
-    password_confirmation: "BobaFett2019",
+    email: "admin@user.com",
+    password: "thunda",
+    password_confirmation: "thunda",
     name: "Admin User",
     roles: "site_admin"
     )
