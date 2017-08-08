@@ -48,3 +48,4 @@ gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'bundler', '~> 1.15', '>= 1.15.3'
+gem 'rails_12factor', group: :production
