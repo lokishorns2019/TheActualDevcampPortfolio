@@ -290,49 +290,28 @@ h6, .h6 {
   margin-top: 8em;
 }
 
-/*
- * Typewriter effet
- */
- 
-#typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .062em; /* Adjust as needed */
-  animation: 
-    typing 4.5s steps(40, end),
-    blink-caret .2s step-end infinite;
+/* font-size, positioning, visibility*/
+.css-typing {
+  text-align: center;
+	margin: 30px;
+	white-space:nowrap;
+	overflow: hidden;
+	width: 23em;
+	display: inline-block;
+	animation: type 5s steps(38, end) 1;	
 }
 
-
-
-
-
-/* Animation */
-.anim-typewriter{
-  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-          animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+/* let's animate, it's super easy */
+@keyframes type{
+	from{ width: 0;}
 }
-@-webkit-keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@-webkit-keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+/*looks like something is wrong, Fixed!!! */
+
+/*let's make it more realistic, so I added span tag, let's animate span*/
+span{
+	animation: blink 1s infinite;
 }
 
-.keep-away-words {
-  margin-right: 2rem;
+@keyframes blink{
+	to{ opacity: .0;}
 }
