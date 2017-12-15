@@ -97,6 +97,18 @@ end
 
 puts "1 portfolio items created"
 
+1.times do |photo_item|
+    Photo.create!(
+        title: "Photo title: #{photo_item}",
+        subtitle: "By: Thor Madsen",
+        body: "Taken an edited by me.",
+        main_image: "http://placehold.it/600x400",
+        thumb_image: "http://placehold.it/350x200"
+        )
+end
+
+puts "1 photo item created"
+
 1.times do |technology|
     Portfolio.last.technologies.create!(
         name: "Technology #{technology}",
