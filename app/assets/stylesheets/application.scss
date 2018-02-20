@@ -368,7 +368,7 @@ html, body {
 	font-family: 'Audiowide', cursive;
 	font-size: 50px;
 	font-weight: normal;
-  @include textGlitch("glitch", 17, white, transparent, red, green, 1084, 115);
+  @include textGlitch("glitch", 17, white, transparent, red, blue, 1084, 115);
 }
 
 #divcontainer{
