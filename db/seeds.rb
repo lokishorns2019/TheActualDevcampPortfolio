@@ -20,7 +20,7 @@ puts "1 regular user created"
 
 1.times do |topic|
     Topic.create!(
-        title: "Just for fun"    
+        title: "Random"    
     )
 end
 

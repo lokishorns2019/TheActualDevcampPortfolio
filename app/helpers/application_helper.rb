@@ -5,7 +5,7 @@ module ApplicationHelper
       " ".html_safe +
       (link_to "Login", new_user_session_path, class: style)
     else
-      link_to "Logout", destroy_user_session_path, method: :delete, class: style
+      (link_to "Logout", destroy_user_session_path, method: :delete, class: style)
     end
   end
 
@@ -28,7 +28,7 @@ module ApplicationHelper
       },
       {
         url: about_path,
-        title: 'About Me'
+        title: 'About'
       },
       {
         url: contact_path,
@@ -36,7 +36,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Tech News'
+        title: 'News'
       },
       {
         url: blogs_path,
@@ -48,7 +48,7 @@ module ApplicationHelper
       },
       {
         url: photos_path,
-        title: 'Photography'
+        title: 'Photos'
       },
     ]
   end
