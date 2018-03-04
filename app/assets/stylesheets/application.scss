@@ -95,7 +95,7 @@ h6, .h6 {
   color: rgba(255,255,255,.5);
   background-color: #fff;
   border-bottom: .25rem solid transparent;
-  text-align: left;
+  text-align: right;
 }
 
 .nav-masthead .nav-link:hover,
@@ -114,7 +114,7 @@ h6, .h6 {
 
 @media (min-width: 48em) {
   .masthead-brand {
-    float: left;
+    float: right;
   }
   .nav-masthead {
     float: right;
@@ -254,7 +254,7 @@ h6, .h6 {
 }
 
 .profile-img {
-  border: 1px solid black;
+  border: 1px solid #fff;
 }
 
 .app-card-container a {
@@ -272,7 +272,7 @@ h6, .h6 {
 }
 
 .nav-link {
-  vertical-align: left;
+  text-align: right;
 }
 
 .name-style {
@@ -280,7 +280,8 @@ h6, .h6 {
 }
 
 .link-align {
-  vertical-align: right;
+  vertical-align: left;
+  text-align: right;
 }
 
 .keep-away-nav {
