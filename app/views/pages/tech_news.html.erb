@@ -4,14 +4,14 @@
     <meta name="msapplication-navbutton-color" content="#19202b">
 </head>
 
-<div class="shady inner cover keep-away-nav">
+<div class=" inner cover keep-away-nav">
     <h2 class="cover-heading">Coding News On Twitter</h2>
     
     <div class="row">
         <% @tweets.each do |tweet| %>
             <div class="col-md-6">
                 <div class="tech-news">
-                    <div class="card">
+                    <div class="shady card">
                         <%= twitter_parser tweet %>
                     </div>
                 </div>
